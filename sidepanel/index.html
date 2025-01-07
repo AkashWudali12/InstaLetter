@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>InstaLetter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>InstaLetter</h1>
+    </header>
+    <main>
+      <section id="resumeSection">
+        <h2>Your Current Resume:</h2>
+        <a id="downloadLink" href="#" download="resume.pdf">
+          <i class="fas fa-file-download"></i> Download Resume
+        </a>
+        <button id="deleteBtn">
+          <i class="fas fa-trash-alt"></i> Delete Resume
+        </button>
+      </section>
+
+      <section id="uploadSection">
+        <h2>Upload a New Resume:</h2>
+        <div class="file-input-container">
+          <div class="file-input">
+            <input type="file" id="resumeInput" accept=".pdf, .doc, .docx" />
+            <label for="resumeInput">
+              <i class="fas fa-upload"></i> Choose File
+            </label>
+          </div>
+          <!-- Text field for displaying the selected filename -->
+          <input type="text" id="selectedFilename" readonly />
+        </div>
+        <button id="uploadBtn">
+          <i class="fas fa-cloud-upload-alt"></i> Upload Resume
+        </button>
+      </section>
+
+      <section id="coverLetterSection" hidden>
+        <a id="clDownloadLink" href="#" download="Cover-Letter.pdf">
+          <i class="fas fa-file-download"></i> Download Cover Letter
+        </a>
+        <button id="copyBtn">
+          <i class="fas fa-copy"></i> Copy to Clipboard
+        </button>
+        <button id="editButton">
+          Apply Changes
+        </button>
+        <textarea id="coverLetterText" rows="5" placeholder="Your generated cover letter will appear here. You can edit it before copying."></textarea>
+      </section>
+
+      <button id="button-prompt" class="primary">
+        <i class="fas fa-magic"></i> Generate Cover Letter
+      </button>
+
+      <div id="response" class="text" hidden></div>
+      <div id="loading" class="text" hidden><span class="blink">...</span></div>
+      <div id="error" class="text" hidden></div>
+    </main>
+  </div>
+  <script src="../dist/sidepanel.bundle.js" type="module"></script>
+</body>
+</html>

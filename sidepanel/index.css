@@ -1,0 +1,202 @@
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  font-size: 16px;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+/* Sections */
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+section h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+/* File Input */
+.file-input {
+  position: relative;
+  display: inline-block;
+}
+
+.file-input input[type="file"] {
+  display: none;
+}
+
+.file-input label {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #5cb85c;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.file-input label:hover {
+  background-color: #4cae4c;
+}
+
+.file-input i {
+  margin-right: 5px;
+}
+
+/* Buttons */
+button {
+  background-color: #0275d8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button i {
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #025aa5;
+}
+
+button.primary {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #5bc0de;
+}
+
+button.primary:hover {
+  background-color: #31b0d5;
+}
+
+button#deleteBtn {
+  background-color: #d9534f;
+  margin-left: 10px;
+}
+
+button#deleteBtn:hover {
+  background-color: #c9302c;
+}
+
+/* Links */
+a {
+  color: #0275d8;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a i {
+  margin-right: 5px;
+}
+
+/* Response, Loading, Error */
+.text {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+}
+
+#loading {
+  text-align: center;
+  font-size: 2em;
+}
+
+/* Hide elements */
+[hidden] {
+  display: none;
+}
+
+/* Blink animation */
+.blink {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+textarea#coverLetterText {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: none; /* Prevent resizing */
+  margin-top: 10px;
+}
+
+textarea#coverLetterText:focus {
+  outline: none;
+  border-color: #5bc0de;
+  box-shadow: 0 0 5px rgba(91, 192, 222, 0.5);
+}
+
+button#copyBtn {
+  background-color: #5bc0de;
+  margin-bottom: 10px;
+}
+
+button#copyBtn:hover {
+  background-color: #31b0d5;
+}
+
+/* New styles for the file input container */
+.file-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#selectedFilename {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
