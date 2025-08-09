@@ -1,5 +1,9 @@
 # Chrome Extension Local Installation Guide
 
+## Demo
+
+Watch the full demo here: [Loom Video Walkthrough](https://www.loom.com/share/13cc9ffcb43f4d08b055373960afea54?sid=72798dd2-65ad-4ad3-b205-aecb18688f4a)
+
 ## Installation Steps
 
 1. **Download the Extension**
@@ -14,10 +18,10 @@
    - Open Google Chrome browser
    - Type `chrome://extensions/` in the address bar and press Enter
    - Look for the "Developer mode" toggle in the top right corner
-   - Click to enable Developer mode - the toggle should move to the right and turn blue
+   - Click to enable Developer mode — the toggle should move to the right and turn blue
    - Click the "Load unpacked" button that appears in the top left
    - Navigate to the folder where you extracted/cloned the extension
-   - Select the folder (make sure it contains the manifest.json file) and click "Select Folder"
+   - Select the folder (make sure it contains the `manifest.json` file) and click "Select Folder"
    - The extension should now appear in your extensions list
 
 ## Usage
@@ -26,7 +30,6 @@
    - After successful installation, look for the extension icon in your Chrome toolbar
    - If you don't see it, click the puzzle piece icon to see all extensions
    - You can pin the extension by clicking the pin icon next to it
-
 
 ## Features
 
@@ -41,7 +44,7 @@ If you encounter issues:
 1. **Extension not appearing**
    - Verify that Developer mode is enabled
    - Check that the correct folder was selected
-   - Ensure manifest.json is properly formatted
+   - Ensure `manifest.json` is properly formatted
 
 2. **Extension not working**
    - Right-click the extension icon and select "Options" to check settings
@@ -72,7 +75,7 @@ To modify the extension:
    - Use Chrome DevTools for debugging
 
 3. **Best Practices**
-   - Keep the manifest.json file up to date
+   - Keep the `manifest.json` file up to date
    - Test on different Chrome versions
    - Follow Chrome's extension guidelines
 
