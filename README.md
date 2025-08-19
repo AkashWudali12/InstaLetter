@@ -31,12 +31,6 @@ Watch the full demo here: [Loom Video Walkthrough](https://www.loom.com/share/13
    - If you don't see it, click the puzzle piece icon to see all extensions
    - You can pin the extension by clicking the pin icon next to it
 
-## Features
-
-- [Detailed description of Feature 1]
-- [Detailed description of Feature 2]
-- [Detailed description of Feature 3]
-
 ## Troubleshooting
 
 If you encounter issues:
